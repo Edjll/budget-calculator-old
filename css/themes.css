@@ -1,0 +1,220 @@
+/* themeSea */
+
+.themeSeaWrapper .division {
+	background-color: #a79879e6;
+    color: #565125;
+}
+
+.themeSeaWrapper .division input {
+	background-color: #b4b091;
+    color: #97721a;
+    box-shadow: inset 	 3px  3px 7px 1px #c5c09c, 
+			    inset 	-3px -3px 7px 1px #908c6b, 
+			    		 4px  4px 6px 0px #898561, 
+			    		 1px -1px 4px 0px #cfc99d
+}
+
+.themeSeaWrapper .division input:focus {
+	box-shadow: inset 	 3px  3px 7px 1px #aca787, 
+				inset 	-3px -3px 7px 1px #949171, 
+						 4px  4px 6px 0px #898561, 
+						 1px -1px 4px 0px #bab37f
+}
+
+.themeSeaWrapper .monthYear {
+	box-shadow: inset 	 3px  3px 7px 1px #c2edfc, 
+				inset 	-3px -3px 7px 1px #5ca0bb, 
+						 4px  4px 6px 0px #416f81, 
+						-1px -1px 4px 0px #71b5d0;
+}
+
+
+.themeSeaWrapper .monthYear:focus-within {
+	box-shadow: inset 	 3px  3px 12px 2px #8ed7ef, 
+				inset 	-3px -3px 12px 2px #64a1b9, 
+						 4px  4px  6px 0px #287897, 
+						-1px -1px  4px 0px #1dacdb;
+}
+
+.themeSeaWrapper .monthYear #month {
+	background-color: #0b3e6680;
+    color: #46bbff;
+}
+
+.themeSeaWrapper .monthYear #year {
+	background-color: #0b3e6680;
+    color: #899dffc9;
+}
+
+.themeSeaWrapper .display {
+	background-color: #93f0ffe0;
+    color: #2943fff2;
+}
+
+.themeSeaWrapper .date {
+    background: linear-gradient(to bottom, #93f0ffe0, #a79879e6);
+}
+
+.themeSeaBackground {
+	background-image: url(../img/background2.jpg) !important;
+}
+
+.themeSeaSettingsPanel {
+	background: lightblue;
+}
+
+.themeSeaWrapper #settings .strip {
+	background-color: #2e4cfe;
+}
+
+.themeSeaWrapper #backMonth .arrow .arrowLeft {
+	background-color: #6075f3;
+}
+
+.themeSeaWrapper #nextMonth .arrow .arrowRight {
+	background-color: #6075f3;
+}
+
+.themeSeaLoginForm {
+	background: lightblue !important;
+}
+
+.themeSeaLoginForm input {
+	background-color: aliceblue !important;
+    color: #1b6de7  !important;
+    box-shadow: inset 3px 3px 7px 1px #d6f0f7, 
+    			inset -3px -3px 7px 1px #c1c9cb, 
+    				  4px 4px 6px 0px #65bdd9, 
+    				  -2px -2px 6px 0px #add8e6
+    				  !important;
+}
+
+.themeSeaLoginForm button, .themeSeaSettingsPanel button {
+    background-color: #62cff3 !important;
+    color: #004fff !important;
+    box-shadow: inset 3px 3px 7px 1px #8ed7ef, 
+    			inset -3px -3px 7px 1px #1ca4d0, 
+    				  4px 4px 6px 0px #1ca4d0, 
+    				  -1px -1px 4px 0px #1ca4d0
+    				  !important;
+}
+
+
+.themeSeaKeyboard button {
+	background-color: #68d6f0cc !important;
+}
+
+.themeSeaKeyboard button:hover {
+	background-color: #a3ecf9d4 !important;
+}
+
+.themeSeaWrapper .division .stripDeleteButton {
+	background-color: #746f43;
+}
+
+/* themeDollars */
+
+.themeDollarsWrapper .division {
+    background-color: #314728b5;
+    color: #6db868;
+}
+
+.themeDollarsWrapper .division input {
+    background-color: #7fb17df0;
+    color: #3b6738;
+    box-shadow: inset 	 3px  3px 7px 1px #97c78d, 
+			    inset 	-3px -3px 7px 1px #648e62, 
+					     4px  4px 6px 0px #4a7b48, 
+					     1px -1px 4px 0px #99dd96;
+}
+
+.themeDollarsWrapper .division input:focus {
+	box-shadow: inset 	 3px  3px 7px 1px #5f8158, 
+				inset 	-3px -3px 7px 1px #5e865d,
+						 4px  4px 6px 0px #4a7b48, 
+						 1px -1px 4px 0px #568554;
+}
+
+.themeDollarsWrapper .monthYear {
+	box-shadow: inset 	 3px  3px 7px 1px #aedfa5, 
+				inset 	-3px -3px 7px 1px #263c23, 
+						 4px  4px 6px 0px #45663f, 
+						 1px -1px 4px 0px #6ba163;
+}
+
+
+.themeDollarsWrapper .monthYear:focus-within {
+	box-shadow: inset 	 3px  3px 7px 1px #78aa6f, 
+				inset 	-3px -3px 7px 1px #142112,
+						 4px  4px 6px 0px #45663f, 
+						 1px -1px 4px 0px #6ba163;
+}
+
+.themeDollarsWrapper .monthYear #month {
+	background-color: #84bb7b94;
+    color: #4a8343;
+}
+
+.themeDollarsWrapper .monthYear #year {
+	background-color: #84bb7b94;
+    color: #94d58d;
+}
+
+.themeDollarsWrapper .display {
+	background-color: #a8d7a6b8;
+    color: #2f792f;
+}
+
+.themeDollarsWrapper .date {
+    background: linear-gradient(to bottom, #a8d7a6b8, #314728b5);
+}
+
+.themeDollarsBackground {
+	background-image: url(../img/background3.jpg) !important;
+}
+
+.themeDollarsSettingsPanel {
+	background: #bfefb7;
+}
+
+.themeDollarsWrapper #settings .strip {
+	background-color: #2f792f;
+}
+
+.themeDollarsWrapper .arrow .arrowLeft, .themeDollarsWrapper .arrow .arrowRight {
+	background-color: #74cb74;
+}
+
+.themeDollarsLoginForm {
+	background: #bfefb7 !important;
+}
+
+.themeDollarsLoginForm input {
+	background-color: #e6fee2 !important;
+    color: #7db074 !important;
+    box-shadow: inset 	 3px  3px 7px 1px #d9f5d4, 
+			    inset 	-3px -3px 7px 1px #d1eacd, 
+					     4px  4px 6px 0px #bfddba, 
+					    -2px -2px 6px 0px #dcf5d8;
+}
+
+.themeDollarsLoginForm button, .themeDollarsSettingsPanel button {
+    color: #48863d !important;
+    background-color: #8dda80 !important;
+    box-shadow: inset 	 3px  3px 7px 1px #a2ed96, 
+			    inset 	-3px -3px 7px 1px #71a868, 
+					     4px  4px 6px 0px #73b868, 
+					    -1px -1px 4px 0px #a0ec93 !important;
+}
+
+.themeDollarsKeyboard button {
+	background-color: #7bb577e0 !important;
+}
+
+.themeDollarsKeyboard button:hover {
+	background-color: #8ad683de !important;
+}
+
+.themeDollarsWrapper .division .stripDeleteButton {
+	background-color: #839173;
+}

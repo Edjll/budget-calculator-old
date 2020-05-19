@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Мой бюджет</title>
+	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="css/budgetCalculator.css">
+	<link rel="stylesheet" href="css/newSettings.css">
+	<link rel="stylesheet" href="css/themes.css">
+	<link rel="stylesheet" href="css/keyboard.css">
+	</style>
+</head>
+<body>
+	<div id="preloader">
+		<div class="firstCircle">
+			<div class="secondCircle">
+				<div class="thirdCircle"></div>
+			</div>
+		</div>
+	</div>
+	<div id="background"></div>
+	<div class="settingsPanel">
+		<div class="users">
+			<button id="signIn" class="buttonOff">Вход</button>
+			<button id="signUp" class="buttonOff">Регистрация</button>
+		</div>
+		<div class="language">
+			<button id="ruLanguage">Ru</button>
+			<button id="enLanguage" class="buttonOff">En</button>
+		</div>
+		<div class="blocks">
+			<button id="columns">Колонки</button>
+			<button id="rows" class="buttonOff">Строки</button>
+		</div>
+		<div class="themes">
+			<button id="sunset">Закат</button>
+			<button id="sea" class="buttonOff">Море</button>
+			<button id="dollars" class="buttonOff">Доллары</button>
+		</div>
+		<div class="cleaning">
+			<button id="cleaning">Очистить</button>
+		</div>
+	</div>
+	<div id="loginForm">
+		<input type="text" name="login" placeholder="Login" id="login" autocomplete="off" maxlength="8"> 
+		<input type="password" name="password" placeholder="Password" id="password" maxlength="8">
+		<button name="readyForm" id="ready" disabled>Войти</button>
+	</div>
+	<div id="registration">
+		<input type="text" name="login" placeholder="Login" id="loginReg" autocomplete="off" maxlength="8"> 
+		<input type="password" name="password" placeholder="Password" id="passwordReg" maxlength="8">
+		<button name="readyForm" id="reg" disabled>Зарегистрироваться</button>
+	</div>
+	<div class="wrapper">
+		<div class="display">
+			<div class="allBalance">
+				<p class="textAllBalance">Всего</p>
+				<p id="balanceAllTime">0</p>
+			</div>
+			<p id="textDisplay">0</p>
+			<button id="settings">
+				<div class="strip"></div>
+				<div class="strip"></div>
+				<div class="strip"></div>
+			</button>
+		</div>
+		<div class="date">
+			<button id="backMonth" class="changeMonth">
+				<div class="arrow">
+					<div class="arrowLeft"></div>
+					<div class="arrowLeft"></div>
+				</div>
+				<div class="arrow">
+					<div class="arrowLeft"></div>
+					<div class="arrowLeft"></div>
+				</div>
+			</button>
+			<div class="monthYear">
+				<input type="text" placeholder="Месяц" id="month" maxlength="9">
+				<input type="text" placeholder="Год" id="year" maxlength="5">
+			</div>
+			<button id="nextMonth" class="changeMonth">
+				<div class="arrow">
+					<div class="arrowRight"></div>
+					<div class="arrowRight"></div>
+				</div>
+				<div class="arrow">
+					<div class="arrowRight"></div>
+					<div class="arrowRight"></div>
+				</div>
+			</button>
+		</div>
+		<div class="division">
+			<div class="income">
+				<span id="textDivisionIncome">Доходы</span>
+				<input id="income" type="text" name="income" maxlength="12">
+				<ol id="incomeElements"></ol>
+			</div>
+			<div class="costs">
+				<span id="textDivisionCosts">Расходы</span>
+				<input id="costs" type="text" name="costs" maxlength="12">
+				<ol id="costsElements"></ol>
+			</div>
+		</div>
+	</div>
+	<div id="keyboard">
+		<button>X</button>
+		<button></button>
+		<button>Clear</button>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+		<button>4</button>
+		<button>5</button>
+		<button>6</button>
+		<button>7</button>
+		<button>8</button>
+		<button>9</button>
+		<button>.</button>
+		<button>0</button>
+		<button>Ok</button>
+	</div>
+	<div id="keyboardMonthEn" class="">
+		<button>⇧</button>
+		<button>✘</button>
+		<button>Clear</button>
+		<button>q</button>
+		<button>w</button>
+		<button>e</button>
+		<button>r</button>
+		<button>t</button>
+		<button>y</button>
+		<button>u</button>
+		<button>i</button>
+		<button>o</button>
+		<button>p</button>
+		<button>a</button>
+		<button>s</button>
+		<button>d</button>
+		<button>f</button>
+		<button>g</button>
+        <button>h</button>
+		<button>j</button>
+		<button>k</button>
+		<button>l</button>
+		<button>z</button>
+		<button>x</button>
+		<button>c</button>
+		<button>v</button>
+        <button>b</button>
+		<button>n</button>
+		<button>m</button>
+	</div>
+	<div id="keyboardMonthRu" class="">
+		<button>⇧</button>
+		<button>✘</button>
+		<button>Очистить</button>
+		<button>й</button>
+		<button>ц</button>
+		<button>у</button>
+		<button>к</button>
+		<button>е</button>
+		<button>н</button>
+		<button>г</button>
+		<button>ш</button>
+		<button>щ</button>
+		<button>з</button>
+		<button>х</button>
+		<button>ъ</button>
+		<button>ф</button>
+		<button>ы</button>
+		<button>в</button>
+        <button>а</button>
+		<button>п</button>
+		<button>р</button>
+		<button>о</button>
+		<button>л</button>
+		<button>д</button>
+		<button>ж</button>
+		<button>э</button>
+        <button>я</button>
+		<button>ч</button>
+		<button>с</button>
+		<button>м</button>
+		<button>и</button>
+		<button>т</button>
+		<button>ь</button>
+		<button>б</button>
+		<button>ю</button>
+	</div>
+	<div id="keyboardLoginRu">
+		<button>⇧</button>
+		<button>✘</button>
+		<button>Очистить</button>
+		<button>En</button>
+    	<button>0</button>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+		<button>4</button>
+		<button>5</button>
+		<button>6</button>
+		<button>7</button>
+		<button>8</button>
+		<button>9</button>
+		<button>й</button>
+		<button>ц</button>
+		<button>у</button>
+		<button>к</button>
+		<button>е</button>
+		<button>н</button>
+		<button>г</button>
+		<button>ш</button>
+		<button>щ</button>
+		<button>з</button>
+		<button>х</button>
+		<button>ъ</button>
+		<button>ф</button>
+		<button>ы</button>
+		<button>в</button>
+        <button>а</button>
+		<button>п</button>
+		<button>р</button>
+		<button>о</button>
+		<button>л</button>
+		<button>д</button>
+		<button>ж</button>
+		<button>э</button>
+        <button>я</button>
+		<button>ч</button>
+		<button>с</button>
+		<button>м</button>
+		<button>и</button>
+		<button>т</button>
+		<button>ь</button>
+		<button>б</button>
+		<button>ю</button>
+	</div>
+	<div id="keyboardLoginEn">
+		<button>⇧</button>
+		<button>✘</button>
+		<button>Clear</button>
+		<button>Ru</button>
+    	<button>0</button>
+		<button>1</button>
+		<button>2</button>
+		<button>3</button>
+		<button>4</button>
+		<button>5</button>
+		<button>6</button>
+		<button>7</button>
+		<button>8</button>
+		<button>9</button>
+		<button>q</button>
+		<button>w</button>
+		<button>e</button>
+		<button>r</button>
+		<button>t</button>
+		<button>y</button>
+		<button>u</button>
+		<button>i</button>
+		<button>o</button>
+		<button>p</button>
+		<button>a</button>
+		<button>s</button>
+		<button>d</button>
+		<button>f</button>
+		<button>g</button>
+        <button>h</button>
+		<button>j</button>
+		<button>k</button>
+		<button>l</button>
+		<button>z</button>
+		<button>x</button>
+		<button>c</button>
+		<button>v</button>
+        <button>b</button>
+		<button>n</button>
+		<button>m</button>
+	</div>
+	<script src="js/parallaxBackground.js"></script>
+	<script src="js/localStorage.js"></script>
+	<script src="js/settings.js"></script>
+	<script src="js/users.js"></script>
+	<script src="js/themes.js"></script>
+	<script src="js/loadLocalStorage.js"></script>
+	<script src="js/addItem.js"></script>
+	<script src="js/deleteLocalStorageElement.js"></script>
+	<script src="js/newDate.js"></script>
+	<script src="js/formsCorrection.js"></script>
+	<script src="js/keyboard.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/cleaningLocalStorage.js"></script>
+</body>
+</html>

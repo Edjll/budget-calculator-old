@@ -1,0 +1,20 @@
+.divisionTwoStage {
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: 1fr;
+}
+
+.divisionTwoStageMax {
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+.incomeTwoStage, .costsTwoStage {
+	height: calc((72vh - 60px) / 2);
+}
+
+.incomeTwoStageMax, .costsTwoStageMax {
+    height: calc((80vh - 70px) / 2);
+}
+
+
